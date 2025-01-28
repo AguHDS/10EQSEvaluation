@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Product Management</title>
 </head>
 <body>
-    <h1>Client</h1>
-    <script src="/src/analysis.js" defer></script>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1>Product Management</h1>
+      </div>
+
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Stock</th>
+              <th>Threshold</th>
+              <th>Restock Date</th>
+              <th>Brand</th>
+            </tr>
+          </thead>
+          <tbody id="productRows">
+            <!-- Product rows will be dynamically inserted here -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="actions">
+        <button id="compareButton">Compare and insight product</button>
+      </div>
+    </div>
+
+    <div class="card insights">
+      <h2>Insights</h2>
+      <div class="insight-text" id="insightText">
+        Select a product and click "Compare and insight" to analyze the data.
+      </div>
+    </div>
+  </div>
+  <script src="/src/analysis.js" defer></script>
 </body>
 </html>
