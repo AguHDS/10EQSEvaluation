@@ -19,3 +19,6 @@ The project will be running on localhost:yourPort
 
 Showcase of the interface
 ![Showcase](Showcase.png)  
+
+Note: most of the products are not available in OpenFoodFacts, so the search will return an exception made for this case.
+The only one that are found on the API are the two last ones.
